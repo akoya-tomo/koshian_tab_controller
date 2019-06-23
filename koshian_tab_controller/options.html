@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .group {margin-bottom: 1.5em;}
+    </style>
+</head>
+
+<body>
+    <p>
+        <input type="checkbox" id="open_new_thread_in_bg">
+        <label for="open_new_thread_in_bg">新しいスレをバックグラウンドで開く</label>
+    </p>
+
+    <fieldset style="min-width: min-content;" class="group">
+        <legend>
+            <input type="checkbox" id="use_doubleclick">
+            <label for="use_doubleclick">左ダブルクリックでスレ⇔カタログを移動する</label>
+        </legend>
+        <p>
+            以下の範囲内では左ダブルクリックによる移動を無効にする
+            <br>
+            <input id="disable_forms" type="checkbox">
+            <label for="disable_forms">操作・入力部分（リンク・ボタン・返信フォーム内etc）</label>
+            <br>
+            <input id="disable_class_rtd" type="checkbox">
+            <label for="disable_class_rtd">レス内</label>
+            <br>
+            <input id="disable_id_cattable" type="checkbox">
+            <label for="disable_id_cattable">カタログテーブル内</label>
+        </p>
+    </fieldset>
+
+    <fieldset style="min-width: min-content;" class="group">
+        <legend>
+            <input type="checkbox" id="focus_on_unread">
+            <label for="focus_on_unread">右ダブルクリックで新着レスのあるスレに移動する</label>
+        </legend>
+        <p>
+            <label for="click_period">右ダブルクリック受付時間</label>
+            <br>
+            <input id="click_period" type="number" min="0">ms
+        </p>
+        <p>
+            <label for="long_press_time">右ボタンを設定時間以上長押しでコンテキストメニュー表示</label>
+            <br>
+            <input id="long_press_time" type="number" min="0">ms
+        </p>
+    </fieldset>
+
+    <script src="./options.js"></script>
+
+</body>
+
+</html>

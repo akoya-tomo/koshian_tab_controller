@@ -1,0 +1,48 @@
+{
+    "manifest_version": 2,
+
+    "name": "KOSHIAN タブ制御",
+
+    "version": "0.1.0",
+
+    "description": "カタログから開いているスレのタブに移動します",
+
+    "icons":{
+        "48": "icons/icon-48.png"
+    },
+
+    "author": "akoya_tomo",
+
+    "homepage_url": "https://github.com/akoya-tomo/koshian_tab_controller/",
+
+    "content_scripts":[
+        {
+            "exclude_matches": ["*://*.2chan.net/*/res/*", "*://*.2chan.net/*/src/*", "*://*.2chan.net/bin/*"],
+            "matches": ["*://*.2chan.net/*/*"],
+            "js": ["cat.js"],
+            "all_frames": true
+        },
+        {
+            "matches": ["*://*.2chan.net/*/res/*"],
+            "js": ["res.js"],
+            "all_frames": false
+        }
+    ],
+
+    "background":{
+        "scripts": ["bg.js"]
+    },
+
+    "permissions": ["storage", "tabs"],
+
+    "options_ui":{
+        "page": "options.html"
+    },
+
+    "applications": {
+        "gecko": {
+            "id": "koshian_tab_controller@akoya-tomo.github.io",
+            "update_url": "https://raw.githubusercontent.com/akoya-tomo/koshian_tab_controller/master/updates.json"
+        }
+    }
+}
