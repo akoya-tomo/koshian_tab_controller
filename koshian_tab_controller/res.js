@@ -36,7 +36,7 @@ function onError(e) {
 }
 
 function onDoubleClick(e) {
-    if (use_doubleclick) {
+    if (use_doubleclick && e.button === 0) {
         if (exclusion && e.target.closest(exclusion)) {
             return;
         }
