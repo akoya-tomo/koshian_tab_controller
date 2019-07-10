@@ -2,7 +2,11 @@
   "addons": {
     "koshian_tab_controller@akoya-tomo.github.io": {
       "updates": [
-        { "version": "0.1.2", "update_link": "https://github.com/akoya-tomo/koshian_tab_controller/releases/download/v0.1.2/koshian_tab_controller-0.1.2-fx.xpi" }
+        { 
+          "version": "0.1.2",
+          "update_link": "https://github.com/akoya-tomo/koshian_tab_controller/releases/download/v0.1.2/koshian_tab_controller-0.1.2-fx.xpi",
+          "update_info_url": "https://github.com/akoya-tomo/koshian_tab_controller/releases/download/v0.1.2/update_info.html"
+        }
       ]
     }
   }
