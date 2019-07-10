@@ -26,7 +26,7 @@
 
 ## インストール
 **GitHub**  
-[![インストールボタン](images/install_button.png "クリックでアドオンをインストール")](https://github.com/akoya-tomo/koshian_tab_controller/releases/download/v0.1.1/koshian_tab_controller-0.1.1-fx.xpi)
+[![インストールボタン](images/install_button.png "クリックでアドオンをインストール")](https://github.com/akoya-tomo/koshian_tab_controller/releases/download/v0.1.2/koshian_tab_controller-0.1.2-fx.xpi)
 
 ※このアドオンは実験的アドオンになります。  
 ※「接続エラーのため、アドオンをダウンロードできませんでした。」と表示されてインストール出来ない時はリンクを右クリックして xpiファイルをダウンロードし、メニューのツール→アドオン（または Ctrl + Shift + A）で表示されたアドオンマネージャーのページに xpiファイルをドラッグ＆ドロップして下さい。  
@@ -51,6 +51,8 @@
   ターゲットを Firefox限定にすることで他への影響を抑えられます。  
 
 ## 更新履歴
+* v0.1.2 2019-07-10
+  - 新しいスレを開くときに移動しないことがある不具合を修正
 * v0.1.1 2019-06-24
   - Firefox 67 以前で右ダブルクリックの移動が誤動作する不具合を修正
   - アドオンが動作する Firefox のバージョンを57以降に変更
