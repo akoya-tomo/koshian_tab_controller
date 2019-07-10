@@ -145,6 +145,7 @@ let is_long_press = false;
 let time_md = Date.now();
 
 function onMouseDown(e) {
+    ctrl_key = e.ctrlKey || e.metaKey;
     if (focus_on_unread && e.button == 2) {
         is_long_press = false;
         time_md = Date.now();
@@ -154,14 +155,11 @@ function onMouseDown(e) {
 let time_mu = Date.now();
 
 function onMouseUp(e) {
+    ctrl_key = e.ctrlKey || e.metaKey;
     if (focus_on_unread && e.button == 2) {
         time_mu = Date.now();
         is_long_press = time_mu - time_md >= long_press_time;
     }
-}
-
-function onKeyUpDown(e) {
-    ctrl_key = e.ctrlKey || e.metaKey;
 }
 
 function main() {
@@ -171,8 +169,6 @@ function main() {
     document.addEventListener("contextmenu", onContextmenu);
     document.addEventListener("mousedown", onMouseDown);
     document.addEventListener("mouseup", onMouseUp);
-    document.addEventListener("keydown", onKeyUpDown);
-    document.addEventListener("keyup", onKeyUpDown);
 }
 
 function onLoadSetting(result) {
