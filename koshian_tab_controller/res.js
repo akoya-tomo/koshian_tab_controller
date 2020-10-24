@@ -5,9 +5,10 @@ const form_selectors =
     "input," +      // inputタグ
     "textarea," +   // textareaタグ
     "label," +      // labelタグ
-    "#ddbut," +      // [見る][隠す]ボタン
+    "#ddbut," +     // [見る][隠す]ボタン
     "form[name='delform2']," +  // 削除フォーム
     ".futaba_lightbox, .fancybox-overlay, .fancybox-wrap," +    // futaba lightbox
+    ".cno," +       // 記事番号
     "";
 
 const DEFAULT_OPEN_NEW_THREAD_IN_BG = false;
