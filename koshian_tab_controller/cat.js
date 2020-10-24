@@ -8,6 +8,7 @@ const form_selectors =
     "form[name='delform2']," +  // 削除フォーム
     "#GM_fth_container_header, #GM_fth_config_container," +   // futaba thread highlighter(K)
     "#GM_fcn_ng_menubar, #GM_fcn_config_container, #GM_fcn_ng_list_container, .GM_fcn_ng_button," +  // futaba catalog NG
+    ".pdmc," +      // プルダウンメニューボタン
     "";
 
 const DEFAULT_OPEN_NEW_THREAD_IN_BG= false;
